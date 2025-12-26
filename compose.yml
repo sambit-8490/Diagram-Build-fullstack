@@ -10,22 +10,22 @@ services:
       - mongo_data:/data/db
 
   backend:
-    build: ./backend
-    container_name: backend
+    build: ./Backend
+    container_name: Backend
     ports:
       - "5000:5000"
     env_file:
-      - ./backend/.env
+      - ./Backend/.env
     depends_on:
       - mongo
 
   frontend:
-    build: ./frontend
-    container_name: frontend
+    build: ./Frontend
+    container_name: Frontend
     ports:
       - "3000:80"
     env_file:
-      - ./frontend/.env
+      - ./Frontend/.env
     depends_on:
       - backend
 

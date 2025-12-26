@@ -1,0 +1,102 @@
+body{
+    width:100%;
+    background-color: #F9E6CF;
+}
+.mainEditer{
+    display: flex;
+}
+.White-space{
+    flex: 1;
+}
+
+.table-item {
+    background-color: #e6e8f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-icon,
+.actions-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #666;
+}
+
+.actions-icon,
+.column-options {
+    position: relative;
+    cursor: pointer;
+    padding: 8px;
+    color: #666;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.actions-icon:hover .dropdown-menu,
+.column-options:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 8px 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-item i {
+    margin-right: 8px;
+}
+
+.table-columns {
+    margin-top: 10px;
+}
+
+.table-column {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.column-name,
+.column-type {
+    margin-left: 4px;
+    padding: 5px 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
